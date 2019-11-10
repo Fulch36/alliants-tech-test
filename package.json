@@ -1,0 +1,23 @@
+{
+  "name": "alliants-technical-test",
+  "version": "1.0.0",
+  "description": "A webserver that provides an API proxy for querying the YouTube and Flickr APIs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node -r dotenv/config index.js",
+    "test": "mocha -r dotenv/config 'tests/*' --exit",
+    "start": "node index.js"
+  },
+  "author": "Sam Fulcher",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2"
+  }
+}
